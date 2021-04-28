@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,145 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+section{
+  display: flex;
+  margin: 10px auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.vertical_line {
+  border-left: 3px solid black;
+  align-self: center;
+  /* margin: 100px auto; */
+  margin-top: 100vh;
+  display: block;
+  height: 180%;
+  width: 2px ;
+  position: relative;
+  /* position: fixed; */
+}
+
+
+.item{
+  width: 100vw;
+  height: auto;
+  /* background-color: red; */
+  /* border: 1px dashed gray; */
+  margin: 20px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+}
+.info{
+  align-self: center;
+  width: 100%;
+  margin: 0;
+  height: auto;
+  /* height: 30%; */
+  /* background-color: red; */
+  /* border: 1px dashed gray; */
+  margin: 10px;
+}
+
+.iconsInfo{
+  float: left;
+  width: 2.5vw;
+  height: 2.5vh;
+  display: block;
+}
+
+
+.barSection {
+  width: auto;
+  height: auto;
+  align-self: flex-start;
+  background-color: #4ac2ce;
+}
+.barSectionText{
+  margin: 0px 20px 0 20px;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  color:white;
+  font-size : 2.4vh;
+}
+
+
+p{
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  color:black;
+  font-size : 2.4vh;
+
+  margin: 20px 0 40px 0;
+}
+
+h2{
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  color:black;
+  font-size : 2.4vh;
+
+  /* margin: 20px 0 40px 0; */
+}
+
+.technicalInfo{
+  width: auto;
+  height: auto;
+  /* border: 1px dashed gray; */
+  display: flex;
+}
+
+.section{
+  width: 50%;
+  /* border: 1px dashed rgb(34, 0, 73); */
+  display: flex;
+  flex-direction: column;
+}
+
+.component{
+  display: flex;
+  width: auto;
+  height: auto;
+  justify-content: flex-start;
+  /* border: 1px dashed rgb(128, 128, 128); */
+}
+
+.square { 
+  width: 20px;
+  height: 400px;
+
+  align-self: flex-start;
+  background-color: #4ac2ce;
+  align-self: center;
+  margin-right: 2vw;
+}
+
+
+.imgChart{
+  width: 60%;
+  height: 80%;
+  margin-left: 4vw;
+}
+
+.iconProgramming  {
+  width: 4vw;
+  margin: 2vh;
+}
+
+.icon { 
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: space-around;
+}
+
+.translate{
+  width: 4vw;
 }
