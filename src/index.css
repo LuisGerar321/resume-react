@@ -27,7 +27,7 @@ section{
   /* margin: 100px auto; */
   margin-top: 100vh;
   display: block;
-  height: 180%;
+  height: 600%;
   width: 2px ;
   position: relative;
   /* position: fixed; */
@@ -137,11 +137,24 @@ h2{
   margin-left: 4vw;
 }
 
+.imgModal{
+  width: 40%;
+  height: 60%;
+  margin-left: 4vw;
+  float: left;
+}
+
+
 .iconProgramming  {
   width: 4vw;
   margin: 2vh;
 }
-
+.imgTarget {
+  max-width: 100%;
+  max-height: 100%;
+  width: 20vw;
+  height: 20vh;
+}
 .icon { 
   display: flex;
   width: auto;
@@ -153,4 +166,29 @@ h2{
 
 .translate{
   width: 4vw;
+}
+
+.NoteStyle  {
+  margin: 40px;
+  width:  auto;
+  height:  auto;
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgba(160, 160, 160, 0.062);
+  border-radius: 1rem;
+  box-shadow: 0px 4px 8px rgba(168, 173, 173, 0.322);
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.NoteStyle:hover  {
+  transform: scale(1.01)
+}
+
+.img_letter{
+  box-shadow: 0px 4px 8px rgba(168, 173, 173, 0.905);
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  width: 100%;
+  height: auto;
 }
