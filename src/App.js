@@ -602,7 +602,7 @@ function App() {
           
           <div className="info">
             <img src= {me} style = {  { marginTop: "20px", marginRight: "9rem",width : "auto", height: "30vh", float: "right",} } alt=""/>
-            <h1 style = {{textAlign:  "left", color:"#626366",  margin: "0px", fontSize : "5vh", fontFamily: "'Raleway', sans-serif"  }}>Gerardo</h1>
+            <h1 style = {{textAlign:  "left", color:"#626366",  margin: "0px", fontSize : "5vh", fontFamily: "'Raleway', sans-serif"  }}>Luis Gerardo</h1>
             <h1 style = {{textAlign:  "left", color:"#626366",margin: "0px",fontSize : "5vh", fontFamily: "'Raleway', sans-serif"  }} >Camara</h1>
             <h1 style = {{textAlign:  "left", color:"#626366",margin: "0px",fontSize : "5vh", fontFamily: "'Raleway', sans-serif"  }}>Salinas</h1>
             <ul style = {{listStyleType: "none", marginLeft: "-2.5vw", marginTop: "-2vh"}}>
@@ -809,10 +809,8 @@ function App() {
 
           </div>
 
-
-          <div className="section">
+          {/* <div className="section">
               <div className="component">
-                {/* The component is not rendering as a box, fix that! */}
                 <div className =  "square"  style = {{backgroundColor:"#8176b2", width:"2vw", height: "auto"} }>
                   <h1></h1>
                 </div>
@@ -822,7 +820,7 @@ function App() {
 
           </div>
           <img src={INAOE_LETTER}  className = "img_letter" alt=""/>
-          <img src={UPY_LETTER} className = "img_letter"  alt=""/>
+          <img src={UPY_LETTER} className = "img_letter"  alt=""/> */}
 
 
 
