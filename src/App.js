@@ -602,7 +602,7 @@ function App() {
           
           <div className="info">
             <img src= {me} style = {  { marginTop: "20px", marginRight: "9rem",width : "auto", height: "30vh", float: "right",} } alt=""/>
-            <h1 style = {{textAlign:  "left", color:"#626366",  margin: "0px", fontSize : "5vh", fontFamily: "'Raleway', sans-serif"  }}>Luis Gerardo</h1>
+            <h1 style = {{textAlign:  "left", color:"#626366",  margin: "0px", fontSize : "5vh", fontFamily: "'Raleway', sans-serif"  }}>Gerardo</h1>
             <h1 style = {{textAlign:  "left", color:"#626366",margin: "0px",fontSize : "5vh", fontFamily: "'Raleway', sans-serif"  }} >Camara</h1>
             <h1 style = {{textAlign:  "left", color:"#626366",margin: "0px",fontSize : "5vh", fontFamily: "'Raleway', sans-serif"  }}>Salinas</h1>
             <ul style = {{listStyleType: "none", marginLeft: "-2.5vw", marginTop: "-2vh"}}>
