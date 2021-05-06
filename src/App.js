@@ -9,26 +9,26 @@ import Spa from "./SpanishLevelLenguage.PNG";
 
 
 
-import upyPhoto  from  "./upy.jpg";
-import itepLogo from  "./itepLogo.png";
-import Icon from "./Icon.png";
-import EngLevel from "./EnglishLevelLenguage.PNG";
-import SpaLevel from "./SpanishLevelLenguage.PNG";
-import ProgLevel from "./ProgSkills.PNG";
-import Markovito from "./MarkovitoJr.jpg";
-import DataDistik from "./DataDistik.png";
-import Programming from "./ProgrammingIllustration.png";
-import CounterCar from "./CounterCar.png";
-import DistanceControl from "./Distance_control.jpeg";
+import upyPhoto  from  ".img/upy.jpg";
+import itepLogo from  ".img/itepLogo.png";
+import Icon from ".img/Icon.png";
+import EngLevel from ".img/EnglishLevelLenguage.PNG";
+import SpaLevel from ".img/SpanishLevelLenguage.PNG";
+import ProgLevel from ".img/ProgSkills.PNG";
+import Markovito from ".img/MarkovitoJr.jpg";
+import DataDistik from ".img/DataDistik.png";
+import Programming from ".img/ProgrammingIllustration.png";
+import CounterCar from ".img/CounterCar.png";
+import DistanceControl from ".img/Distance_control.jpeg";
 import MotorDcConnections from  "./ControlMotor.JPG";
-import KeyBoard from "./KeyboardMatrix.JPG";
-import DataD from "./Propuesta_proyecto_png.png";
-import Micro from "./Micro.jpg"
-import Tiago from "./tiago.jpg"
-import Motor from "./ControlMotor.JPG"
-import Car from "./carCounterHD.JPG"
-import INAOE_LETTER from "./INAOE_LETTER.JPG";
-import UPY_LETTER from "./UPY_LETTER.JPG";
+import KeyBoard from ".img/KeyboardMatrix.JPG";
+import DataD from ".img/Propuesta_proyecto_png.png";
+import Micro from ".img/Micro.jpg"
+import Tiago from ".img/tiago.jpg"
+import Motor from ".img/ControlMotor.JPG"
+import Car from ".img/carCounterHD.JPG"
+import INAOE_LETTER from ".img/INAOE_LETTER.JPG";
+import UPY_LETTER from ".img/UPY_LETTER.JPG";
 
 import Note from "./shared/organims/Note"
 import Modal from "./shared/organims/Modal.jsx"
