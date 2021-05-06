@@ -1,34 +1,34 @@
 import './App.css';
-import me from "./Picture_LuisGerardoCamara.jpg"
+import me from "./img/Picture_LuisGerardoCamara.jpg"
 import  {AiFillLinkedin, AiFillPhone} from "react-icons/ai";
 import {MdEmail, MdGTranslate} from "react-icons/md";
 import { useState } from 'react';
 import ResumeTable from  "./shared/organims/Table.jsx";
-import Eng from  "./EnglishLevelLenguage.PNG";
-import Spa from "./SpanishLevelLenguage.PNG";
+import Eng from  "./img/EnglishLevelLenguage.png";
+import Spa from "./img/SpanishLevelLenguage.png";
 
 
 
-import upyPhoto  from  ".img/upy.jpg";
-import itepLogo from  ".img/itepLogo.png";
-import Icon from ".img/Icon.png";
-import EngLevel from ".img/EnglishLevelLenguage.PNG";
-import SpaLevel from ".img/SpanishLevelLenguage.PNG";
-import ProgLevel from ".img/ProgSkills.PNG";
-import Markovito from ".img/MarkovitoJr.jpg";
-import DataDistik from ".img/DataDistik.png";
-import Programming from ".img/ProgrammingIllustration.png";
-import CounterCar from ".img/CounterCar.png";
-import DistanceControl from ".img/Distance_control.jpeg";
-import MotorDcConnections from  "./ControlMotor.JPG";
-import KeyBoard from ".img/KeyboardMatrix.JPG";
-import DataD from ".img/Propuesta_proyecto_png.png";
-import Micro from ".img/Micro.jpg"
-import Tiago from ".img/tiago.jpg"
-import Motor from ".img/ControlMotor.JPG"
-import Car from ".img/carCounterHD.JPG"
-import INAOE_LETTER from ".img/INAOE_LETTER.JPG";
-import UPY_LETTER from ".img/UPY_LETTER.JPG";
+import upyPhoto  from  "./img/upy.jpg";
+import itepLogo from  "./img/itepLogo.png";
+import Icon from "./img/Icon.png";
+import EngLevel from "./img/EnglishLevelLenguage.png";
+import SpaLevel from "./img/SpanishLevelLenguage.png";
+import ProgLevel from "./img/ProgSkills.png";
+import Markovito from "./img/MarkovitoJr.jpg";
+import DataDistik from "./img/DataDistik.png";
+import Programming from "./img/ProgrammingIllustration.png";
+import CounterCar from "./img/CounterCar.png";
+import DistanceControl from "./img/Distance_control.jpeg";
+import MotorDcConnections from  "./img/ControlMotor.jpg";
+import KeyBoard from "./img/KeyboardMatrix.jpg";
+import DataD from "./img/Propuesta_proyecto_png.png";
+import Micro from "./img/Micro.jpg"
+import Tiago from "./img/tiago.jpg"
+import Motor from "./img/ControlMotor.jpg"
+import Car from "./img/carCounterHD.jpg"
+import INAOE_LETTER from "./img/INAOE_LETTER.jpg";
+import UPY_LETTER from "./img/UPY_LETTER.jpg";
 
 import Note from "./shared/organims/Note"
 import Modal from "./shared/organims/Modal.jsx"
