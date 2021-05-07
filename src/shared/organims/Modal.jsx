@@ -50,7 +50,7 @@ const Modal  = ({open, onClose, title, video, children} )=>{
                 return ReactDom.createPortal (
 
                         <>
-                        <div style= {ModalStyle}>
+                        <div className = "ModalStyle">
                         <Button onClick = {onClose}  type="primary" style={{ marginLeft: 8, float: "right" }}>
                                 Close
                         </Button>
@@ -68,7 +68,7 @@ const Modal  = ({open, onClose, title, video, children} )=>{
 
         return (
 
-                <div style= {ModalStyle}>
+                <div className = "ModalStyle">
 
                         {/* <iframe  style = {videoStyle } width="560" height="315" src="https://www.youtube.com/embed/Wy1KM_N_SP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                         <h1>Hola mundo</h1>

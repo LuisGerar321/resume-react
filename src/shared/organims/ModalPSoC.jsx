@@ -63,7 +63,7 @@ const ModalPSoC  = ({open, onClose, title, image, children} )=>{
                 return ReactDom.createPortal (
 
                         <>
-                        <div style= {ModalStyle}>
+                        <div className = "ModalStyle">
                         <Button onClick = {onClose}  type="primary" style={{ marginLeft: 8, float: "right" }}>
                                 Close
                         </Button>

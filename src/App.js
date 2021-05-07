@@ -597,8 +597,9 @@ function App() {
   return (
     <div className="App" style = { {zIndex: "2"} }  >
 
-      <section >
-        <div className = "item">
+      <div className = "container">
+
+        <section className = "item line">
           
           <div className="info">
             <img src= {me} style = {  { marginTop: "20px", marginRight: "9rem",width : "auto", height: "30vh", float: "right",} } alt=""/>
@@ -700,11 +701,11 @@ function App() {
           </Note>
 
 
-        </div>
+        </section>
 
-        <div className="vertical_line"></div>
+        {/* <div className="vertical_line"></div> */}
 
-        <div className = "item">
+        <section className = "item ">
           <div className="technicalInfo">
             <div className="section">
               <div className="component">
@@ -826,9 +827,9 @@ function App() {
 
           
 
-        </div>
+        </section>
         <MdGTranslate size={80}  style = { {position: "fixed", right:"-0" , float: "left", textAlign:"right"}} onClick = {()=>{ changeLanguage(stateButton)  } }  />
-      </section>
+      </div>
 
       {/* Modals */}
       <ModalData image = { currentText.portfolio.modal.Datadistik.img } title ={currentText.portfolio.modal.Datadistik.title} open = {isOpenData} onClose = { ()=>{setIsOpenData(false)}} >
