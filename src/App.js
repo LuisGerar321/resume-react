@@ -608,16 +608,16 @@ function App() {
             <h1 style = {{textAlign:  "left", color:"#626366",margin: "0px",fontSize : "5vh", fontFamily: "'Raleway', sans-serif"  }}>Salinas</h1>
             <ul style = {{listStyleType: "none", marginLeft: "-2.5vw", marginTop: "-2vh"}}>
               <li>
-                <AiFillLinkedin onClick={() => window.open("https://www.linkedin.com/in/luis-gerardo-camara-salinas321/", '_blank')} className = "iconsInfo" /><p style = {{textAlign: "left", fontFamily: "'Raleway', sans-serif", color:"#626366", fontSize : "2.4vh" } } >luis-gerardo-camara-salinas321</p>
+                <div style = { {marginTop: "2em" }} >
+                    <AiFillLinkedin onClick={() => window.open("https://www.linkedin.com/in/luis-gerardo-camara-salinas321/", '_blank')} className = "iconsInfo" /><p style = {{ textAlign: "left", fontFamily: "'Raleway', sans-serif", color:"#626366", fontSize : "1.5em" } } >luis-gerardo-camara-salinas321</p>
+                </div>
               </li>
 
-              <li>
+              {/* <li>
                 <MdEmail className = "iconsInfo" /> <p style = {{textAlign: "left", fontFamily: "'Raleway', sans-serif", color:"#626366", fontSize : "2.4vh" } } >al1609022@upy.edu.mx</p>
 
-              </li>
-              <li>
-                <AiFillPhone className = "iconsInfo" /> <p style = {{textAlign: "left", fontFamily: "'Raleway', sans-serif", color:"#626366", fontSize : "2.4vh" } } >9992674470</p>
-              </li>
+              </li> */}
+
 
             </ul>
           </div>
@@ -627,7 +627,7 @@ function App() {
 
           </div>
 
-          <p>
+          <p >
             {currentText.profile.body}
           </p>
 

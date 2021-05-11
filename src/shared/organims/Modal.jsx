@@ -36,8 +36,8 @@ const videoStyle = {
         paddingLeft: "40px",
         paddingTop: "10vh",
         paddingRight: "10px",
-        width: "30vw",
-        height: "60vh",
+        width: "200px",
+        height: "auto",
 
 }
 
@@ -55,7 +55,7 @@ const Modal  = ({open, onClose, title, video, children} )=>{
                                 Close
                         </Button>
 
-                                <iframe  style = {videoStyle } width="560" height="515" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe  className = "videoStyle" width="560" height="515" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <h1>{title}</h1>
                                 <br/>
                                 <p>{children}</p>

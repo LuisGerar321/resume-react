@@ -23,7 +23,7 @@ export const ResumeTable = ({info, array}) => {
                                 console.log("element: ",element,  Array.isArray(element.body) );
                                 if(Array.isArray(element.body)){
                                         return <div  key = {index}>
-                                        <h2  style = { {textAlign: "left"} }>{element.title}</h2>
+                                        <h2  style = { {textAlign: "left", color:"black", fontWeight: "bold", fontSize: "1.4em",  } }>{element.title}</h2>
                                         
                                         {element.body.map( (item, index)=>{
                                                 return <p key={index} style={ {margin: "2vh",}}>{ "*"+item}</p>
@@ -37,7 +37,7 @@ export const ResumeTable = ({info, array}) => {
                                 try{
                                         if(element.body.length){
                                                 return <div  key = {index}>
-                                                        <h2  style = { {textAlign: "left"} }>{element.title}</h2>
+                                                        <h2  style = { {textAlign: "left", color:"black", fontWeight: "bold", fontSize: "1.4em", } }>{element.title}</h2>
                                                         
                                                         {element.map( (item, index)=>{
                                                                 return <h1>{ item}</h1>
@@ -49,7 +49,7 @@ export const ResumeTable = ({info, array}) => {
                                                 </div>                                        
                                         }else{
                                                 return <div  key = {index}>
-                                                        <h2  style = { {textAlign: "left"} }>{element.title}</h2>
+                                                        <h2  style = { {textAlign: "left", color:"black", fontWeight: "bold", fontSize: "1.4em", } }>{element.title}</h2>
         
                                                         <p>{ element.body}</p>
                                                 </div>
@@ -57,7 +57,7 @@ export const ResumeTable = ({info, array}) => {
         
                                 }catch{
                                         return <div  key = {index}>
-                                                <h2  style = { {textAlign: "left"} }>{element.title}</h2>
+                                                <h2  style = { {textAlign: "left", color:"black", fontWeight: "bold", fontSize: "1.4em", } }>{element.title}</h2>
 
                                                 <p>{ element.body}</p>
                                         </div> 

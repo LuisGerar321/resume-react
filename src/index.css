@@ -103,9 +103,10 @@ div.container{
 
 .iconsInfo{
   float: left;
-  width: 2.5vw;
-  height: 2.5vh;
+  width: 2em;
+  height: auto;
   display: block;
+  margin: 1em;
 }
 
 
@@ -250,7 +251,17 @@ h2{
   padding: 30px;
 }
 
-@media (max-width: 400px) {
+.videoStyle  {
+  float: left;
+  padding-left: 40px;
+  padding-top: 10vh;
+  padding-right: 10px;
+  width: 200px;
+  height: auto;
+
+}
+
+@media (max-width: 1500px) {
   .ModalStyle {
     width: 100%;
     left:  0;
@@ -258,8 +269,55 @@ h2{
     margin-bottom: 80px;
   }
 
+  .videoStyle  {
+    float: left;
+    padding-left: 40px;
+    padding-top: 10vh;
+    padding-right: 10px;
+    width: 200px;
+    height: auto;
+  
+  }
+
   /* .line{
     border-right: none;
   
   } */
+}
+
+@media (max-width: 430px) {
+  .ModalStyle {
+    width: 100%;
+
+    padding-left: 10px;
+    padding: 0px;
+    flex-wrap: wrap;
+    
+  }
+
+  .videoStyle  {
+    float: left;
+    /* padding-left: 40px; */
+    /* padding-top: 10vh; */
+    /* padding-right: 10px; */
+    width: 350px;
+    height: auto;
+    margin-top: -50px;
+    left: -10px;
+  }
+  h1{
+    font-size: 2em;
+    margin-left: 100px;
+  }
+
+}
+
+p{
+  font-weight: 700;
+  color: black;
+}
+h2{
+  font-weight: bold;
+  color: rgb(110, 29, 29);
+  font-size: 1.3em;
 }
