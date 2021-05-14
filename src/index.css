@@ -256,8 +256,8 @@ h2{
   padding-left: 40px;
   padding-top: 10vh;
   padding-right: 10px;
-  width: 200px;
-  height: auto;
+  width: 35em;
+  height: 30em;
 
 }
 
@@ -269,14 +269,16 @@ h2{
     margin-bottom: 80px;
   }
 
-  .videoStyle  {
+  /* .videoStyle  {
     float: left;
-    padding-left: 40px;
+    padding-left: 0px;
     padding-top: 10vh;
-    padding-right: 10px;
-    width: 200px;
-    height: auto;
-  
+    padding-right: 2em;
+    width: 35em;
+    height: 30em;
+  } */
+  .titleModal{
+    margin-top: 2.1em;
   }
 
   /* .line{
@@ -285,7 +287,9 @@ h2{
   } */
 }
 
-@media (max-width: 430px) {
+@media (max-width: 686px) {
+
+/* @media (max-width: 430px) { */
   .ModalStyle {
     width: 100%;
 
@@ -297,14 +301,14 @@ h2{
 
   .videoStyle  {
     float: left;
-    /* padding-left: 40px; */
-    /* padding-top: 10vh; */
-    /* padding-right: 10px; */
-    width: 350px;
-    height: auto;
-    margin-top: -50px;
-    left: -10px;
+    /* margin-left: 6em; */
+    padding-left: 0px;
+    padding-top: 10vh;
+    padding-right: 2em;
+    width: auto;
+    height: 20em;
   }
+
   h1{
     font-size: 2em;
     margin-left: 100px;
@@ -320,4 +324,186 @@ h2{
   font-weight: bold;
   color: rgb(110, 29, 29);
   font-size: 1.3em;
+}
+
+@media ( max-width: 768px) and (min-width: 610px )  {
+  .ModalStyle {
+    width: 100%;
+    padding-left: 10px;
+    padding: 0px;
+    flex-wrap: wrap;
+    margin-top: 3.5em;
+    height: 60em;
+    
+  }
+  .descriptionModal{
+    margin: 4em;
+    font-size: 1.5em ;
+    margin-top: -3em;
+  }
+
+  .videoStyle  {
+    float: left;
+    margin-top: -3em;
+    margin-left: 2em;
+    width: 50em;
+    height: 40em;
+  }
+  .titleModal{
+    margin-top: 2.1em;
+    margin-left: 6em;
+    margin-bottom: 1.5em;
+  }
+
+  p{
+    font-weight: 700;
+    color: black;
+  }
+  h2{
+    font-weight: bold;
+    color: rgb(110, 29, 29);
+    font-size: 1.3em;
+  }
+}
+
+
+
+/* This works for most of the celphone in vertical screen */
+@media (max-width: 670px) {
+
+  .ModalStyle {
+    width: 100%;
+    margin-top: 4em;
+    padding-left: 10px;
+    padding: 0px;
+    flex-wrap: wrap;
+    /* background-color: rgb(187, 178, 178); */
+    
+  }
+
+  .descriptionModal{
+    margin: 3em;
+    font-size: 0.85em ;
+    margin-top: -3em;
+  }
+
+  .videoStyle  {
+    float: left;
+    margin-top: -3em;
+    margin-left: 3em;
+    /* margin-left: 6em; */
+    /* padding-left: 0px; */
+    /* padding-top: 10vh; */
+    /* padding-right: 2em; */
+    width: 90vw;
+    height: 35em;
+  }
+  .titleModal{
+    margin-top: 2.1em;
+    margin-left: 1em;
+  }
+
+  p{
+    font-weight: 700;
+    color: black;
+  }
+  h2{
+    font-weight: bold;
+    color: rgb(110, 29, 29);
+    font-size: 1.3em;
+  }
+}
+
+
+/* To put in tablet    */
+
+
+@media (max-width: 360px) {
+
+  .ModalStyle {
+    width: 100%;
+    margin-top: 4em;
+    padding-left: 10px;
+    padding: 0px;
+    flex-wrap: wrap;
+    /* background-color: rgb(187, 178, 178); */
+    
+  }
+
+  .descriptionModal{
+    margin: 3em;
+    font-size: 0.85em ;
+    margin-top: -3em;
+  }
+
+  .videoStyle  {
+    float: left;
+    margin-top: -3em;
+    margin-left: 3em;
+    /* margin-left: 6em; */
+    /* padding-left: 0px; */
+    /* padding-top: 10vh; */
+    /* padding-right: 2em; */
+    width: 90vw;
+    height: 20em;
+  }
+  .titleModal{
+    margin-top: 2.1em;
+    margin-left: 1em;
+  }
+
+  p{
+    font-weight: 700;
+    color: black;
+  }
+  h2{
+    font-weight: bold;
+    color: rgb(110, 29, 29);
+    font-size: 1.3em;
+  }
+}
+
+
+@media (max-height: 500px) {
+  .ModalStyle {
+    width: 100%;
+    margin-top: 2em;
+    padding-left: 10px;
+    padding: 0px;
+    flex-wrap: wrap;
+    /* background-color: rgb(187, 178, 178); */
+    
+  }
+
+  .descriptionModal{
+    margin: 3em;
+    font-size: 0.85em ;
+    margin-top: -3em;
+  }
+
+  .videoStyle  {
+    float: left;
+    margin-top: -0.95em;
+    margin-left: 3em;
+    /* margin-left: 6em; */
+    /* padding-left: 0px; */
+    /* padding-top: 10vh; */
+    /* padding-right: 2em; */
+    width: 90vw;
+    height: 10em;
+  }
+  .titleModal{
+    margin-top: 2.1em;
+    margin-left: 1em;
+  }
+
+  p{
+    font-weight: 700;
+    color: black;
+  }
+  h2{
+    font-weight: bold;
+    color: rgb(110, 29, 29);
+    font-size: 1.3em;
+  }
 }
