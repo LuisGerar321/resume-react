@@ -57,9 +57,9 @@ const ModalDistance  = ({open, onClose, title, video, children} )=>{
                         </Button>
 
                                 <iframe  style = {videoStyle} width="560" height="515" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <h1>{title}</h1>
+                                <h1 className= "titleModal">{title}</h1>
                                 <br/>
-                                <p>{children}</p>
+                                <p className = "descriptionModal">{children}</p>
                                 
                         </div>
                         </>, 

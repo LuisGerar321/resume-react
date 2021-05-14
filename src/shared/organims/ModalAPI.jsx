@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import { Button, DatePicker, version } from "antd";
-// import 'antd/dist/antd.css';
+import 'antd/dist/antd.css';
 
 
 
@@ -55,7 +55,7 @@ const iconSectionStyle = {
 }
 
 
-const ModalCounter  = ({open, onClose, title, image, children} )=>{
+const ModalPSoC  = ({open, onClose, title, image, children} )=>{
         if(!open){
                 return null;
         }
@@ -69,7 +69,7 @@ const ModalCounter  = ({open, onClose, title, image, children} )=>{
                         </Button>
 
                         <img className = "imgModal"  src={image} alt=""/>  
-                                <h1 className = "titleModal" >{title}</h1>
+                                <h1 className= "titleModal" >{title}</h1>
                                 <br/>
                                 <p className = "descriptionModal">{children}</p>
                                 
@@ -82,4 +82,4 @@ const ModalCounter  = ({open, onClose, title, image, children} )=>{
 }
 
 
-export default ModalCounter;  
+export default ModalPSoC;  

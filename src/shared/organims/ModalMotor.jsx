@@ -50,15 +50,15 @@ const ModalDistance  = ({open, onClose, title, video, children} )=>{
                 return ReactDom.createPortal (
 
                         <>
-                        <div className = "ModalStyle">
+                        <div  className = "ModalStyle">
                         <Button onClick = {onClose}  type="primary" style={{ marginLeft: 8, float: "right" }}>
                                 Close
                         </Button>
 
                                 <iframe  style = {videoStyle} width="560" height="515" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                <h1>{title}</h1>
+                                <h1 className= "titleModal">{title}</h1>
                                 <br/>
-                                <p>{children}</p>
+                                <p className = "descriptionModal" >{children}</p>
                                 
                         </div>
                         </>, 

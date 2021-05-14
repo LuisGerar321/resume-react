@@ -6,6 +6,9 @@ import { useState } from 'react';
 import ResumeTable from  "./shared/organims/Table.jsx";
 import Eng from  "./img/EnglishLevelLenguage.png";
 import Spa from "./img/SpanishLevelLenguage.png";
+import Cicd from "./img/cicd.jpg";
+import apiP from "./img/api.png";
+import apiSC from "./img/apiSC.png";
 
 
 
@@ -37,6 +40,8 @@ import ModalCounter from "./shared/organims/ModalCounter.jsx"
 import ModalDistance from "./shared/organims/ModalDistance.jsx"
 import ModalMotor from "./shared/organims/ModalMotor.jsx"
 import ModalPSoC from "./shared/organims/ModalPSoC.jsx"
+import ModalPortfolio from "./shared/organims/ModalPortfolio.jsx"
+import ModalAPI from "./shared/organims/ModalAPI.jsx"
 
 
 <a href="https://icons8.com/icon/40669/c++">C++ icon by Icons8</a>
@@ -200,9 +205,15 @@ const EngText = {
       Psoc: {
         title: "Matrix keyboard library for PSoC-5lp",
         body: "This PSoC 5 library allows you to read the matrix keyboard reading just digits ('1', 'A', etc) or a combination of digits ('1997', 'A10B'). This library is a summary function to read a simple Matrix Keyboard 4x4. This allows you to create your PSoC projects without taking care of the low programming logic of reading the buttons of the keyboard."
-      }, 
-
-
+      },
+      Portfolio: {
+        title: "Portfolio",
+        body: "SPA project created in React in which you will find basic information about me and my others projects."
+      },
+      Api: {
+        title: "Create and deploy a TODO list API",
+        body: "In this project, I created a TODO list API. Then, I deployed the application in an AWS instance using pm2 and its services."
+      }
 
     },
     modal: {//
@@ -243,6 +254,18 @@ const EngText = {
         video: null,
         img:  KeyBoard,
         body: `This PSoC 5 library allows you to read the matrix keyboard reading  digits ('1', 'A', etc) or a digits combination ('1997', 'A10B'). So, it's a set of functions to read/write in an easy way on your Matrix Keyboard 4x4. Using this library you can create your PSoC projects without taking care of the low programming logic on the keyboard.`
+      },
+      Portfolio: {
+        title: "Portfolio",
+        video: null,
+        img: Cicd,
+        body: "This portfolio was created using React, CSS, and JavaScript. Furthermore, I storaged this SPA in a Bucket S3 in AWS in order to host the application in CodeFront as we saw in CI/CD virtual class."
+      },
+      Api: {
+        title: "Create and deploy a TODO list API",
+        video: null,
+        img: apiSC,
+        body: "I created this application with express, mysql, nodemon, body-parser, and another's node modules in npm. Then, I stored the API in my EC2 instances, make a proxy reverse to my domain, and got a SSL certificate to my HTTPS server."
       },
     }    
 
@@ -407,7 +430,15 @@ const EspText = {
                   Psoc: {
                     title: "Biblioteca en C para un teclado de matricial 4x4 en PSoC-5lp Microcontroller",
                     body: "Esta biblioteca PSoC 5, le permite leer el teclado matricial por dígitos ('1', 'A', etc.) o por una combinación de dígitos ('1997', 'A10B'). Esta biblioteca contiene un listado de funciones para leer un teclado Matrix 4x4 de una manera simple. Esto le permitirá crear sus proyectos de PSoC sin preocuparse por la programación de bajo nivel."
-                  }, 
+                  },
+                  Portfolio: {
+                    title: "Portafolio",
+                    body: "En este proyecto encontraras informacion basica de mi y de algunos proyectos en los que he trabajado."
+                  },
+                  Api: {
+                    title: "Create and deploy a TODO list API",
+                    body: "In this project, I created a TODO list API. Then, I deployed the application in an AWS instance using pm2 and its services."
+                  }
 
 
 
@@ -451,11 +482,20 @@ const EspText = {
                     img:  KeyBoard,
                     body: `En este proyecto, trabajé con un ingeniero en software de PlenumSoft para crear un dispositivo que pudiera reconocer números usando un modelo entrenado, microcontroladores, una WebCam  y un servidor de flask programado en Python.`
                   },
-                }    
-
-
-                
-
+                  Portfolio: {
+                    title: "Portafolio",
+                    video: null,
+                    img: Cicd,
+                    body: "Cree esta aplicacion de una sola vista (SPA) usando React, CSS y JavaScript. Para el Deploying, guarde la pagina en un Bucket S3 (AWS) para hacer un host con CloudFront (AWS)."
+                  },
+                  Api: {
+                    title: "Create and deploy a TODO list API",
+                    video: null,
+                    img: apiSC,
+                    body: "Cree esta aplicación usando módulos de node como: express, nodemon, mysql, body-parser, etc. Después, guarde la API en una instancia de EC2, hice un proxy reverse para redireccionar a mi dominio con certificados SSL."
+                  }, 
+                },
+   
               },
 
   Recommendation_letter: {
@@ -512,6 +552,8 @@ const EspText = {
   const  [isOpenCounter, setIsOpenCounter] = useState(false);
   const  [isOpenAngular, setIsOpenAngular] = useState(false);
   const  [isOpenMatrix, setIsOpenMatrix] = useState(false);
+  const  [isOpenPortfolio, setIsOpenPortfolio] = useState(false);
+  const  [isOpenAPI, setIsOpenAPI] = useState(false);
   
 
 
@@ -571,6 +613,12 @@ const EspText = {
         break;
       case "Matrix":
         setIsOpenMatrix(state);
+        break;
+      case "Portfolio":
+        setIsOpenPortfolio(state);
+        break;
+      case "API":
+        setIsOpenAPI(state);
         break;
     }
     
@@ -669,12 +717,27 @@ const EspText = {
               currentText.portfolio.note.Counter_track.body
             }
               
-              callback = {CallbackChangeState} modal = "Counter"   >  
+              callback = {CallbackChangeState} modal = "Counter">  
             
           </Note> 
 
-
           
+          <Note
+            img = {Cicd}
+            title =  {currentText.portfolio.note.Portfolio.title   }
+            text = { currentText.portfolio.note.Portfolio.body }
+            callback  = { CallbackChangeState} modal = "Portfolio"
+          >
+          </Note>
+
+
+          <Note
+            img = {apiP}
+            title =  {currentText.portfolio.note.Api.title   }
+            text = { currentText.portfolio.note.Api.body }
+            callback  = { CallbackChangeState} modal = "API"
+          >
+          </Note>
 
            <Note 
             img={Tiago} title = {
@@ -858,15 +921,14 @@ const EspText = {
         {currentText.portfolio.modal.Psoc.body}
       </ModalPSoC>
 
-
-      
-
-
-
+      <ModalPortfolio image = {currentText.portfolio.modal.Portfolio.img} title ={currentText.portfolio.modal.Portfolio.title} open = {isOpenPortfolio} onClose = { ()=>{setIsOpenPortfolio(false)}} >
+        {currentText.portfolio.modal.Portfolio.body}
+      </ModalPortfolio>
 
 
-
-
+      <ModalAPI image = {currentText.portfolio.modal.Api.img} title ={currentText.portfolio.modal.Api.title} open = {isOpenAPI} onClose = { ()=>{setIsOpenAPI(false)}} >
+        {currentText.portfolio.modal.Api.body}
+      </ModalAPI>
 
 
 

@@ -69,9 +69,9 @@ const ModalData  = ({open, onClose, title, image, children} )=>{
                         </Button>
 
                         <img  className = "imgModal"   src={image} alt=""/>  
-                                <h1>{title}</h1>
+                                <h1 className= "titleModal">{title}</h1>
                                 <br/>
-                                <p>{children}</p>
+                                <p className = "descriptionModal">{children}</p>
                                 
                         </div>
                         </>, 
